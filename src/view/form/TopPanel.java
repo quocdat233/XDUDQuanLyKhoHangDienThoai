@@ -1,4 +1,8 @@
-package view.components;
+package view.form;
+
+import view.components.ButtonUtils;
+import view.components.RoundedPanel;
+import view.components.TextFieldUtils;
 
 import javax.swing.*;
 import java.awt.*;
@@ -89,5 +93,8 @@ public class TopPanel extends RoundedPanel {
         button.setVerticalTextPosition(SwingConstants.BOTTOM);
 
         return button;
+    }
+    public JButton getBtnAdd(){
+        return btnAdd;
     }
 }

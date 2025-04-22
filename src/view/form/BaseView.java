@@ -1,4 +1,4 @@
-package view.components;
+package view.form;
 
 import javax.swing.*;
 import java.awt.*;

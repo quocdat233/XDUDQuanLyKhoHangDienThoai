@@ -1,17 +1,21 @@
 package view;
 
-import view.components.*;
+import controller.ProductViewController;
+import view.form.BaseView;
+import view.form.TopPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class ProductView extends BaseView {
     private JTable table;
-    private TopPanel topPanel;
+    private final TopPanel topPanel;
 
     public ProductView() {
         super();
 
         topPanel = new TopPanel();
+        new ProductViewController(this);
 
         JPanel containerPanel = new JPanel(new BorderLayout());
         containerPanel.setBackground(new Color(230, 230, 230));
@@ -42,9 +46,14 @@ public class ProductView extends BaseView {
         SwingUtilities.invokeLater(() -> {
             new ProductView().setVisible(true);
         });
-    }
-    public JPanel getContentPanel() {
+    }  public JPanel getContentPanel() {
+
         return mainPanel;
     }
+    public TopPanel getTopPanel() {
+        return topPanel;
+    }
+
+
 
 }

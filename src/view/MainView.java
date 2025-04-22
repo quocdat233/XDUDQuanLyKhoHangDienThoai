@@ -1,14 +1,14 @@
 package view;
 
 import view.components.RoundedPanel;
-import view.components.SidebarMenu;
+import view.form.SidebarMenu;
 import javax.swing.*;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 import java.awt.*;
 import java.net.URL;
-import view.components.BaseView;
+import view.form.BaseView;
 
 public class MainView extends BaseView {
     private SidebarMenu sideBarMenu;
@@ -37,7 +37,7 @@ public class MainView extends BaseView {
 
         bodyPanel = new JPanel(new GridLayout(1, 3, 70, 0));
         bodyPanel.setBackground(Color.decode("#F0F7FA"));
-        bodyPanel.setBorder(BorderFactory.createEmptyBorder(60, 60, 70, 60)); // Giảm padding 2 bên và trên dưới
+        bodyPanel.setBorder(BorderFactory.createEmptyBorder(60, 60, 70, 60));
 
         panelExactly = createPanelImage("/images/accuracy.png");
         panelSecurity =createPanelImage("/images/security.png");

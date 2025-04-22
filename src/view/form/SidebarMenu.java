@@ -1,4 +1,6 @@
-package view.components;
+package view.form;
+
+import view.components.ButtonUtils;
 
 import javax.swing.*;
 import java.awt.*;
@@ -102,6 +104,12 @@ public class SidebarMenu extends JPanel {
 
     public JButton getBtnProduct() {
         return btnProduct;
+    }
+    public JButton getBtnCustomer(){
+        return btnCustomer;
+    }
+    public JButton getBtnEmployee(){
+        return btnEmployee;
     }
 
 
